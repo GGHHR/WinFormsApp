@@ -44,7 +44,7 @@ namespace v2rayn
             listView1.View = View.Details; // 使用详细信息视图模式
 
             // 添加列标题
-            listView1.Columns.Add("链接", 300);
+            listView1.Columns.Add("链接", 350);
 
 
 
@@ -70,9 +70,9 @@ namespace v2rayn
 
             int padding = 10;
             int width = this.Size.Width - 2 * padding - 20;
-            int height = this.Size.Height - 2 * padding - 150;
+            int height = this.Size.Height - 2 * padding - 130;
 
-            listView1.Location = new Point(10, 110);
+            listView1.Location = new Point(10, 100);
             listView1.Size = new Size(width, height);
         }
 
@@ -108,6 +108,11 @@ namespace v2rayn
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

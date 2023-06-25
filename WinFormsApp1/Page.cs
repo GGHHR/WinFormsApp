@@ -35,7 +35,7 @@ namespace v2rayn
 
                 this.Form1.Label2Text =  "正在加载第"+ currentPage+"页";
                
-                await page.GoToAsync($"https://github.com/search?q=节点 clash 免费&type=repositories&s=updated&o=desc&p={currentPage}");
+                await page.GoToAsync($"https://github.com/search?q=节点 clash 免费 订阅&type=repositories&s=updated&o=desc&p={currentPage}");
 
                 await page.WaitForSelectorAsync("a[class='v-align-middle']");
 

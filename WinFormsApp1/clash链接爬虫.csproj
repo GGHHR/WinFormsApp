@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <StartupObject>WinFormsApp1.Program</StartupObject>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
