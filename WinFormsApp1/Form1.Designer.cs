@@ -86,9 +86,10 @@
             label2.Location = new Point(15, 86);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(32, 17);
+            label2.Size = new Size(44, 17);
             label2.TabIndex = 4;
-            label2.Text = "正在";
+            label2.Text = "准备着";
+            label2.Click += label2_Click;
             // 
             // Form1
             // 

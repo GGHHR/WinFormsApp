@@ -55,7 +55,9 @@ namespace v2rayn
                     this.Form1.Label2Text = "正在加载 : " + element;
 
                     await page.GoToAsync(element);
+
                     var el = await page.QuerySelectorAllAsync("div[id='readme']");
+
                     foreach (var divElement in el)
                     {
                         var innerText = await divElement.EvaluateFunctionAsync<string>("e => e.innerText");
@@ -65,7 +67,7 @@ namespace v2rayn
                         foreach (Match match in matches)
                         {
                             this.Form1.Addlist = match.Value; 
-                            allMatches.Add(match.Value); // Store the match in the list
+                            allMatches.Add(match.Value);  
                         }
                     }
                 }

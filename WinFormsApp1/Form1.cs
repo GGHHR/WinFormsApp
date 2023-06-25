@@ -24,10 +24,15 @@ namespace v2rayn
         {
             set
             {
-                ListViewItem listViewItem = new ListViewItem(value);
-                listView1.Items.Add(listViewItem);
+                if (!listView1.Items.ContainsKey(value))
+                {
+                    ListViewItem listViewItem = new ListViewItem(value);
+                    listViewItem.Name = value;
+                    listView1.Items.Add(listViewItem);
+                }
             }
         }
+
 
         public Form1()
         {
@@ -98,6 +103,11 @@ namespace v2rayn
 
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
