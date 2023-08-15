@@ -36,7 +36,7 @@
             // 
             this.label1.Location = new System.Drawing.Point(25, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 43);
+            this.label1.Size = new System.Drawing.Size(376, 64);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click_2);
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 82);
+            this.ClientSize = new System.Drawing.Size(413, 89);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
