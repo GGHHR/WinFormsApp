@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             Start();
         } 
-        public  async Task Start()
+        public  async void Start()
         {
             while (true)
             {
