@@ -98,6 +98,8 @@ namespace WindowsFormsApp1
                     await Task.Delay(1000); // 每秒更新一次
                     countdownTime = countdownTime.Subtract(TimeSpan.FromSeconds(1));
                 }
+
+                countdownTime = TimeSpan.FromMinutes(1);
             }
         }
         private void UpdateLabel(string newText)
