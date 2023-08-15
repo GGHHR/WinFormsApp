@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.33808.371
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clash链接爬虫", "WinFormsApp1\clash链接爬虫.csproj", "{3994F543-7C64-498B-9A6F-10348FCF9D3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{842687F9-ECDA-483F-898D-AC2B10CE622D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{D013ECB2-BB2E-44C0-8AC0-CADBF6F26C21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3994F543-7C64-498B-9A6F-10348FCF9D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3994F543-7C64-498B-9A6F-10348FCF9D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3994F543-7C64-498B-9A6F-10348FCF9D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3994F543-7C64-498B-9A6F-10348FCF9D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842687F9-ECDA-483F-898D-AC2B10CE622D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842687F9-ECDA-483F-898D-AC2B10CE622D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842687F9-ECDA-483F-898D-AC2B10CE622D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842687F9-ECDA-483F-898D-AC2B10CE622D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D013ECB2-BB2E-44C0-8AC0-CADBF6F26C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D013ECB2-BB2E-44C0-8AC0-CADBF6F26C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D013ECB2-BB2E-44C0-8AC0-CADBF6F26C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D013ECB2-BB2E-44C0-8AC0-CADBF6F26C21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

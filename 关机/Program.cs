@@ -1,8 +1,4 @@
-
-
-using v2rayn;
-
-namespace WinFormsApp1
+namespace 关机
 {
     internal static class Program
     {
