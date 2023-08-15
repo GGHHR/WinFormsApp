@@ -23,15 +23,14 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             Start();
-        }
-
+        } 
         public  async Task Start()
         {
             while (true)
             {
                 var browser = await Puppeteer.LaunchAsync(new LaunchOptions
                 {
-                    Headless = false,
+                    Headless = true,
                     ExecutablePath = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
                 });
                 var page = await browser.NewPageAsync();
@@ -64,18 +63,17 @@ namespace WindowsFormsApp1
                     var document = parser.ParseDocument(content);
 
                     // 提取 <title> 标签的值
-                    var titleElement = document.QuerySelector("title");
+                    var titleElement = document.QuerySelector("#H2Title");
                     if (titleElement != null)
                     {
                         string titleValue = titleElement.TextContent;
                         Console.WriteLine("Title: " + titleValue); 
-                        UpdateLabel(titleValue);
+                        UpdateLabel("正在看："+titleValue);
                     }
                     
                     
                     string[] ab = new string[]
-                    {
-                        "郑州天之同昌商贸有限公司",
+                    {  
                         "防雷检测",
                         "防雷装置",
                         "雷电检测"
@@ -133,7 +131,7 @@ namespace WindowsFormsApp1
             smtpClient.UseDefaultCredentials = true; //不和请求一起发送
             smtpClient.Credentials = new NetworkCredential(mailAccount, pwd); //设置发送账号密码
 
-            MailMessage mailMessage = new MailMessage(mailAccount, "1241639333@qq.com"); //实例化邮件信息实体并设置发送方和接收方
+            MailMessage mailMessage = new MailMessage(mailAccount, "624099257@qq.com"); //实例化邮件信息实体并设置发送方和接收方
             mailMessage.Subject = "找到了"; //设置发送邮件得标题
             mailMessage.Body = str; //设置发送邮件内容
             mailMessage.BodyEncoding = Encoding.UTF8; //设置发送邮件得编码

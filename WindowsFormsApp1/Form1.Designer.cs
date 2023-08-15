@@ -34,11 +34,11 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(25, 16);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(376, 64);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "准备开始";
             this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // Form1
@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(413, 89);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "查找";
             this.ResumeLayout(false);
         }
 
