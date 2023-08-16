@@ -117,9 +117,7 @@ namespace WindowsFormsApp1
             string stmpServer = @"smtp.qq.com"; //smtp服务器地址
             string mailAccount = @"1241639333@qq.com"; //邮箱账号
             string pwd = @"xuwhkreirlxbgjej"; //邮箱密码（qq邮箱此处使用授权码，其他邮箱见邮箱规定使用的是邮箱密码还是授权码）
-
-            // string mailTo = @"xcryxiqzzasaebbe";//邮箱密码（qq邮箱此处使用授权码，其他邮箱见邮箱规定使用的是邮箱密码还是授权码）
-
+            
             //邮件服务设置
             SmtpClient smtpClient = new SmtpClient();
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network; //指定电子邮件发送方式
