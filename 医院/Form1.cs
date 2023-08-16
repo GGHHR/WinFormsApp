@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
                     }
                     
                     
-                    string[] ab = new string[]
+                    string[] ab = 
                     {  
                         "防雷检测",
                         "防雷装置",
