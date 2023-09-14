@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "医院", "医院\医院.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{6415729F-67BA-4E8D-AAF0-62798A48A23E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{B419E41C-09FB-4B4C-8238-5E54A22205C0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2ray订阅更新", "v2ray订阅更新\v2ray订阅更新.csproj", "{03095EDD-8B56-4764-9219-9CB8CF047D1A}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{6415729F-67BA-4E8D-AAF0-62798A48A23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6415729F-67BA-4E8D-AAF0-62798A48A23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6415729F-67BA-4E8D-AAF0-62798A48A23E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B419E41C-09FB-4B4C-8238-5E54A22205C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B419E41C-09FB-4B4C-8238-5E54A22205C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B419E41C-09FB-4B4C-8238-5E54A22205C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B419E41C-09FB-4B4C-8238-5E54A22205C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{03095EDD-8B56-4764-9219-9CB8CF047D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{03095EDD-8B56-4764-9219-9CB8CF047D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03095EDD-8B56-4764-9219-9CB8CF047D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
