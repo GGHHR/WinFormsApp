@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace v2ray订阅更新
 {
     partial class Form1
     {
@@ -29,30 +29,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(376, 64);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "准备开始";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 86);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "查找";
-            this.ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
         }
-
-        private System.Windows.Forms.Label label1;
 
         #endregion
     }
