@@ -15,7 +15,8 @@ namespace v2ray订阅更新
         public Form1()
         {
             InitializeComponent();
-            new UpSubItem().Up();
+            // new UpSubItem().Up();
+            new Sub_get().start();
         }
     }
 }
