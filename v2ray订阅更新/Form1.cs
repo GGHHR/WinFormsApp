@@ -8,8 +8,14 @@ namespace v2ray订阅更新
     {
         public Form1()
         {
+            
             InitializeComponent();
-            LoadDataAndExitAsync();
+            
+            string defaultValue = Properties.Settings.Default.DefaultValue;
+
+            // 将默认值设置为输入框的值
+            textBox1.Text = defaultValue;
+            LoadDataAndExitAsync(); 
         }
         public string GetOutputTextBoxValue()
         {
@@ -30,7 +36,12 @@ namespace v2ray订阅更新
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            // 获取用户修改后的输入框值
+            string modifiedValue = textBox1.Text;
+            // 将值保存到配置文件
+            Properties.Settings.Default.DefaultValue = modifiedValue;
+            Properties.Settings.Default.Save();
+
         }
     }
 }
