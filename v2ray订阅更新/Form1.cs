@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,8 +9,19 @@ namespace v2ray订阅更新
         public Form1()
         {
             InitializeComponent();
-            // new UpSubItem().Up();
-            new Sub_get().start();
+            LoadDataAndExitAsync();
+        }
+
+        private async void LoadDataAndExitAsync()
+        {
+            await Task.Run(async () =>
+            {
+                // 在这里执行您的异步任务
+                await new Sub_get().start("https://nodefree.org/", ".item-title a", ".section p");
+            });
+
+            // 关闭应用程序
+            Application.Exit();
         }
     }
 }
