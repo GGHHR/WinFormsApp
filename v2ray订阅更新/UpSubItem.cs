@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Data.SQLite;
-
+using System.Windows.Forms; 
 namespace v2ray订阅更新
 {
-    public class UpSubItem
+    public class UpSubItem : Form
     {
         public void Up(string url, string remarks,string id )
         {
-            string dbFilePath = @"D:\APP\v2rayN-With-Core\guiConfigs\guiNDB.db";
+            string outputValue = new Form1().GetOutputTextBoxValue();
+            string dbFilePath = $@"{outputValue}\guiConfigs\guiNDB.db";
+            Console.WriteLine(dbFilePath);
+
             string connectionString = $"Data Source={dbFilePath};Version=3;";
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {

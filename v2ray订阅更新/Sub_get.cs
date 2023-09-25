@@ -6,7 +6,7 @@ namespace v2ray订阅更新
 {
     public class Sub_get
     {
-        public async Task  start(string url,string list_el,string el)
+        public async Task  start(string url,string list_el,string el,string remarks,string id)
         {
             var browser = await Puppeteer.LaunchAsync(new LaunchOptions
             {
@@ -23,7 +23,8 @@ namespace v2ray订阅更新
             string content1 = await page.EvaluateFunctionAsync<string>("(selector) => { return document.querySelector(selector).textContent; }", el);
             Console.WriteLine("标签中的内容：" + content1);
             browser.CloseAsync();
-            new UpSubItem().Up(content1,"a1","1");
+            
+            new UpSubItem().Up(content1,remarks,id);
         }
     }
 }
