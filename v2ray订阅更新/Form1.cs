@@ -25,10 +25,12 @@ namespace v2ray订阅更新
         {
             await Task.Run(async () =>
             {
+                Console.WriteLine(1);
                 // 在这里执行您的异步任务
                 await new Sub_get().start("https://nodefree.org/", ".item-title a", ".section p","a1","1");
                 await new Sub_get().start("https://clashnode.com/f/freenode", "[cp-post-title] a", ".post-content-content p:nth-child(20)","a2","2");
-                await new Sub_get().start("https://v2cross.com/", ".entry-title a", ".entry-content h5","a3","1");
+                await new Sub_get().start("https://v2cross.com/", ".entry-title a", ".entry-content h5","a3","3");
+                await new Sub_get().start("https://clashgithub.com/", "[itemprop=\"name headline\"] a", ".article-content p:nth-child(11)","a4","4");
             });
 
             // 关闭应用程序
