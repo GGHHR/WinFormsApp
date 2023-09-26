@@ -9,8 +9,7 @@ namespace v2ray订阅更新
         {
             string outputValue = new Form1().GetOutputTextBoxValue();
             string dbFilePath = $@"{outputValue}\guiConfigs\guiNDB.db";
-            Console.WriteLine(dbFilePath);
-
+            
             string connectionString = $"Data Source={dbFilePath};Version=3;";
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -23,9 +22,6 @@ namespace v2ray订阅更新
                     cmd.Parameters.AddWithValue("@Remarks", remarks);
                     cmd.Parameters.AddWithValue("@Url", url);
                     cmd.Parameters.AddWithValue("@id", id);
-
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    Console.WriteLine($"Rows affected: {rowsAffected}");
                 }
             }
         }
