@@ -37,11 +37,20 @@ namespace v2ray订阅更新
             // 输出匹配的链接
             foreach (Match match in matches)
             {
-                Console.WriteLine("链接：" + match.Value);
-                new UpSubItem().Up(match.Value,remarks,id);
+                
+                string convertTarget = "";
+                
+                if(match.Value.EndsWith("yaml"))
+                {
+                    convertTarget = "mixed";
+                }
+                Console.WriteLine($@"链接{remarks}：{match.Value}");
+                
+                 new UpSubItem().Up(match.Value,remarks,id,convertTarget);
+                 browser.CloseAsync();
             }
             
-            browser.CloseAsync();
+           
             
         }
     }
