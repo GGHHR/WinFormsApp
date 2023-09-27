@@ -29,12 +29,19 @@ namespace v2ray订阅更新
         {
             await Task.Run(async () =>
             { 
-                // 在这里执行您的异步任务
+                // 进来是列表的那种
                 await new Sub_get().start("https://nodefree.org/", ".item-title a", ".section p","a1","1");
-                await new Sub_get().start("https://clashnode.com/f/freenode", "[cp-post-title] a", ".post-content-content p:nth-child(20)","a2","2");
+                await new Sub_get().start("https://clashnode.com/", "[cp-post-title] a", ".post-content-content p:nth-child(20)","a2","2");
                 await new Sub_get().start("https://v2cross.com/", ".entry-title a", ".entry-content h5","a3","3");
                 await new Sub_get().start("https://clashgithub.com/", "[itemprop=\"name headline\"] a", ".article-content p:nth-child(11)","a4","4");
                 await new Sub_get().start("https://www.yudou66.com/", ".entry-title a", ".post-body  p:nth-child(11)","a5","5");
+            });
+            
+            
+             await Task.Run(async () =>
+            { 
+                // 进来直接找链接
+                await new Sub_get1().start("https://wanshanziwo.eu.org/", ".is-fullwidth tr:nth-child(3) td","b1","1000");
             });
 
             // 关闭应用程序
