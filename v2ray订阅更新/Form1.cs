@@ -34,6 +34,7 @@ namespace v2ray订阅更新
                 await new Sub_get().start("https://clashnode.com/", "[cp-post-title] a", ".post-content-content p:nth-child(20)","a2","2");
                 await new Sub_get().start("https://v2cross.com/", ".entry-title a", ".entry-content h5","a3","3");
                 await new Sub_get().start("https://clashgithub.com/", "[itemprop=\"name headline\"] a", ".article-content p:nth-child(11)","a4","4");
+                await new Sub_get().start("https://www.iyio.net/", ".column .cInherit a", "pre","a5","5");
             });
             
             
