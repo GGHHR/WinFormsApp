@@ -11,10 +11,10 @@ namespace v2ray订阅更新
         {
             var browser = await Puppeteer.LaunchAsync(new LaunchOptions
             {
-                Headless = true,
+                Headless = false,
                 ExecutablePath = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
             });
-            var page = await browser.NewPageAsync();
+            var page = await browser.NewPageAsync(); 
             await page.GoToAsync(url); 
             
             await page.WaitForSelectorAsync(el);
