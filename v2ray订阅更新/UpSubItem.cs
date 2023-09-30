@@ -17,7 +17,7 @@ namespace v2ray订阅更新
                 connection.Open();
 
                 // Define the SQL command to insert or replace a record in the SubItem table
-                string insertOrUpdateSql = "INSERT OR REPLACE INTO SubItem (remarks, url, id, convertTarget) VALUES (@Remarks, @Url, @Id, @ConvertTarget)";
+                string insertOrUpdateSql = "INSERT OR REPLACE INTO SubItem (remarks, url, id, convertTarget,sort) VALUES (@Remarks, @Url, @Id, @ConvertTarget, @Sort)";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(insertOrUpdateSql, connection))
                 {
@@ -25,6 +25,7 @@ namespace v2ray订阅更新
                     cmd.Parameters.AddWithValue("@Url", url);
                     cmd.Parameters.AddWithValue("@Id", id);
                     cmd.Parameters.AddWithValue("@ConvertTarget", convertTarget);
+                    cmd.Parameters.AddWithValue("@Sort", id);
 
                     // Execute the command to insert or replace the record
                     cmd.ExecuteNonQuery();
